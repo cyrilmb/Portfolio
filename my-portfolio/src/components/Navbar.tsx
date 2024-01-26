@@ -41,7 +41,7 @@ const Navbar = () => {
               <h2 className="text-2xl font-bold">Cyril Malle-Barlow</h2>
             </div>
             <div className="md:hidden">
-              <button>
+              <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
               </button>
             </div>
@@ -53,9 +53,25 @@ const Navbar = () => {
               navbar ? 'block' : 'hidden'
             }`}
           >
-            <div className="md:flex md:space-x-6">
+            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, i) => {
-                return <a key={i}>{item.label}</a>;
+                return (
+                  <Link
+                    key={i}
+                    to={item.page}
+                    className={
+                      'block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100'
+                    }
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    {item.label}
+                  </Link>
+                );
               })}
               {currentTheme === 'dark' ? (
                 <button
