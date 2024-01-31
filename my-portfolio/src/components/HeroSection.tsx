@@ -22,11 +22,14 @@ const HeroSection = () => {
             Welcome!
           </h2>
           <span className="inline-flex">
-            <p className="font-bold text-2xl md:py-5 mr-2 md:text-5xl">
+            <p className="font-bold text-2xl py-2 mr-2 md:py-6 md:text-5xl">
               This is
             </p>
             <p className="font-bold text-4xl text-blue-700 md:text-7xl md:py-1">
               Cyril
+            </p>
+            <p className="font-bold text-2xl py-2 mr-2 md:py-6 md:text-5xl">
+              ,
             </p>
           </span>
           <p className="text-lg mt-4 md:text-2xl">
@@ -38,6 +41,7 @@ const HeroSection = () => {
           </p>
           <p className="text-lg mb-6 md:text-2xl">
             He loves plants and spiders, stories and games, food and friends.
+            And his dogs, especially.
           </p>
           <Link
             to="projects"
