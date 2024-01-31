@@ -7,8 +7,8 @@ import { HiArrowDown } from 'react-icons/hi2';
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:space-x-4">
-        <div>
+      <div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:space-x-4 md:text-left md:py-12 md:mt-16">
+        <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
             src="/pink-door.jpeg"
@@ -17,18 +17,22 @@ const HeroSection = () => {
             height={300}
           />
         </div>
-        <div>
-          <h2 className="font-bold text-2xl mt-6">Welcome!</h2>
-          <h1 className="font-bold text-4xl mb-2">My name is Cyril</h1>
-          <p className="text-lg mt-4">
-            I&#39;m a{' '}
+        <div className="md:mt-2 md:w-3/5">
+          <h2 className="font-bold text-2xl mt-6 md:text-5xl md:mt-0">
+            Welcome!
+          </h2>
+          <h1 className="font-bold text-4xl mb-2 md:text-7xl">
+            This is Cyril,
+          </h1>
+          <p className="text-lg mt-4 md:text-2xl">
+            a{' '}
             <span className="font-semibold text-blue-700">
               Full Stack Developer{' '}
             </span>
             living in beautiful Minneapolis, MN.
           </p>
-          <p className="text-lg mb-6">
-            I love plants and spiders, stories and games, food and friends.
+          <p className="text-lg mb-6 md:text-2xl">
+            He loves plants and spiders, stories and games, food and friends.
           </p>
           <Link
             to="projects"
@@ -52,7 +56,7 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} />
+          <HiArrowDown size={35} className="animate-bounce" />
         </Link>
       </div>
     </section>
