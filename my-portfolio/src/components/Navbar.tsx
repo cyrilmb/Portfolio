@@ -38,7 +38,7 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3">
             <div className="md:py-5 md:black">
-              <h2 className="text-2xl font-bold">Cyril Malle-Barlow</h2>
+              <h2 className="text-2xl font-bold">C R L M B</h2>
             </div>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
