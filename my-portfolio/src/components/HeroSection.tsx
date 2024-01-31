@@ -8,11 +8,11 @@ const HeroSection = () => {
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:space-x-4 md:text-left md:py-12 md:mt-16">
-        <div className="md:w-1/2 md:mt-2">
+        <div className="md:w-1/2 md:-mr-0.5 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
             src="/pink-door.jpeg"
-            alt="Portrait of the developer looking happy because he is posing infront of a pink door"
+            alt="Portrait of the developer looking happy because he is standing in front of a pink door"
             width={300}
             height={300}
           />
@@ -21,9 +21,14 @@ const HeroSection = () => {
           <h2 className="font-bold text-2xl mt-6 md:text-5xl md:mt-0">
             Welcome!
           </h2>
-          <h1 className="font-bold text-4xl mb-2 md:text-7xl">
-            This is Cyril,
-          </h1>
+          <span className="inline-flex">
+            <p className="font-bold text-2xl md:py-5 mr-2 md:text-5xl">
+              This is
+            </p>
+            <p className="font-bold text-4xl text-blue-700 md:text-7xl md:py-1">
+              Cyril
+            </p>
+          </span>
           <p className="text-lg mt-4 md:text-2xl">
             a{' '}
             <span className="font-semibold text-blue-700">
@@ -47,7 +52,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center py-20">
         <Link
           to="about"
           activeClass="active"
