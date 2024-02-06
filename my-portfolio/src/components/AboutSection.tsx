@@ -1,4 +1,5 @@
 import React from 'react';
+import SlideLeft from './SlideLeft';
 
 const skills = [
   { skill: 'HTML5' },
@@ -60,12 +61,14 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center md:justify-start">
               {skills.map((item, i) => {
                 return (
-                  <p
-                    key={i}
-                    className="bg-blue-400 px-4 py-2 mr-2 mt-2 rounded text-grey-500 font-semibold"
-                  >
-                    {item.skill}
-                  </p>
+                  <SlideLeft>
+                    <p
+                      key={i}
+                      className="bg-blue-400 px-4 py-2 mr-2 mt-2 rounded text-grey-500 font-semibold"
+                    >
+                      {item.skill}
+                    </p>
+                  </SlideLeft>
                 );
               })}
             </div>
