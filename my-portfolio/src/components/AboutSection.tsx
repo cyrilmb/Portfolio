@@ -58,7 +58,7 @@ const AboutSection = () => {
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
               My Skills
             </h1>
-            <div className="flex flex-wrap flex-row justify-center md:justify-start">
+            <div className="flex flex-wrap flex-row justify-start">
               {skills.map((item, i) => {
                 return (
                   <SlideLeft>
