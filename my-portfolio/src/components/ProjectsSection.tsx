@@ -30,7 +30,7 @@ const ProjectsSection = () => {
         Projects
         <hr className="w-9 h-1 mx-auto my-4 bg-blue-600 border-0 rounded" />
       </h1>
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col space-y-20">
         {projects.map((project, i) => {
           return (
             <div key={i}>
