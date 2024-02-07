@@ -15,6 +15,7 @@ const HeroSection = () => {
             alt="Portrait of the developer looking happy because he is standing in front of a pink door"
             width={300}
             height={300}
+            priority={true}
           />
         </div>
         <div className="md:mt-2 md:w-3/5">

@@ -14,6 +14,7 @@ const config: Config = {
           "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
         slideUpCubicBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
         slideLeftCubicBezier: "slideLeft 2s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        wiggle: 'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
         bounce: {
@@ -27,6 +28,10 @@ const config: Config = {
         slideLeft: {
           from: {transform: "translateX(100%)"},
           to: {transform: "translateX(0)"}
+        },
+        wiggle: {
+          '0%, 100%': { transform: "translateX(3px)" },
+          '50%': { transform: "translateX(-3px)" },
         }
       }
     },
