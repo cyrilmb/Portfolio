@@ -48,11 +48,11 @@ const AboutSection = () => {
               software developer
             </p>
             <br />
-            <p>With my backgrounds in healthcare and bartending,</p>
+            <p>With my backgrounds in healthcare and bartending</p>
             <br />
-            <p>BLAHBLAHBLAHABLHA</p>
+            <p>Concern for service into tech curiosities</p>
             <br />
-            <p>BLAHBLAHBLAHABLHA</p>
+            <p>hobbies</p>
           </div>
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">

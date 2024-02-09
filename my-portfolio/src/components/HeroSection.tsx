@@ -7,7 +7,7 @@ import { HiArrowDown } from 'react-icons/hi2';
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center my-10 pt-16 pb-4 md:flex-row md:space-x-6 md:text-left md:pt-12 md:pb-40 md:mt-16">
+      <div className="flex flex-col text-center items-center justify-center my-10 pt-16 pb-4 md:flex-row md:space-x-6 md:text-left md:pt-12 md:pb-20 md:mt-16">
         <div className="md:w-1/2 md:-mr-0.5 md:mt-2">
           <Image
             className="rounded-full shadow-2xl md:mx-3"
@@ -40,13 +40,14 @@ const HeroSection = () => {
             </span>
             living in beautiful Minneapolis, MN.
           </p>
-          <p className="text-lg mb-6 md:text-2xl">
+          <p className="text-lg mt-2 mb-6 md:text-2xl">
             He loves plants and spiders, stories and games, food and friends.
             And his dogs, especially.
           </p>
+          <p className="text-lg mt-2 mb-6 md:text-2xl">Check out my work:</p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-blue-700 rounded shadow hover:bg-blue-800"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-blue-700 rounded shadow cursor-pointer hover:bg-blue-800"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -55,9 +56,21 @@ const HeroSection = () => {
           >
             Projects
           </Link>
+          <p className="text-lg mt-2 mb-6 md:text-2xl">Get to know me:</p>
+          <Link
+            to="about"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <HiArrowDown size={35} className="animate-bounce cursor-pointer" />
+          </Link>
         </div>
       </div>
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-col text-center items-center justify-center pb-4 md:flex-row md:space-x-6 md:pb-40">
+        <p className="text-lg mt-2 mb-6 md:text-2xl">Get to know me:</p>
         <Link
           to="about"
           activeClass="active"
@@ -66,7 +79,7 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <HiArrowDown size={35} className="animate-bounce cursor-pointer" />
         </Link>
       </div>
     </section>
