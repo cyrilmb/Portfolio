@@ -31,24 +31,24 @@ const AboutSection = () => {
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl">
-          About Me
+          Nice to meet you!
           <hr className="w-9 h-1 mx-auto my-4 bg-blue-600 border-0 rounded" />
         </h1>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-x-10 md:space-y-0">
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
-              Get to know me!
+              A little about me:
             </h1>
             <p>
               {' '}
               My name is Cyril Malle-Barlow, I'm a{' '}
               <span className="font-bold">{'highly curious'}</span>,
-              <span className="font-bold">{' highly curious'}</span>, and
-              <span className="font-bold">{' highly curious'}</span> software
-              developer
+              <span className="font-bold">{' creative-minded'}</span>, and
+              <span className="font-bold">{' persistently curious'}</span>{' '}
+              software developer
             </p>
             <br />
-            <p>BLAHBLAHBLAHABLHA</p>
+            <p>With my backgrounds in healthcare and bartending,</p>
             <br />
             <p>BLAHBLAHBLAHABLHA</p>
             <br />
