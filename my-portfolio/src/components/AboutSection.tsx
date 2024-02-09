@@ -42,10 +42,10 @@ const AboutSection = () => {
             <p>
               {' '}
               My name is Cyril Malle-Barlow, I'm a{' '}
-              <span className="font-bold">{'highly curious'}</span>,
-              <span className="font-bold">{' creative-minded'}</span>, and
-              <span className="font-bold">{' persistently curious'}</span>{' '}
-              software developer
+              <span className="font-bold">{'persistently curious'}</span>,
+              <span className="font-bold">{' creatively minded'}</span>, and
+              <span className="font-bold">{' team-oriented'}</span> full stack
+              software developer.
             </p>
             <br />
             <p>With my backgrounds in healthcare and bartending</p>
