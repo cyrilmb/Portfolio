@@ -53,6 +53,8 @@ const AboutSection = () => {
             <p>Concern for service into tech curiosities</p>
             <br />
             <p>hobbies</p>
+            <p>Checkout my GitHub:</p>
+            <p>Or I'd love to connect on LinkedIn:</p>
           </div>
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
