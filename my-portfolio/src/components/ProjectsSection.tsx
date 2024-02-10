@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'Haiku-for-You',
     description:
-      'In the quest to relieve burden of creation tech-enhanced creativity, this mobile app generates an original haiku for a user to edit, save and publish on a public forum.',
+      'Relieve the burden of authorship and jumpstart your writing by utilizing the tech-enhanced creativity of this mobile app! Haiku-For-You will generate an original haiku that you can edit and publish on its public forum for others to read. The home page features a random poem from the collection for a moment of quiet introspection or eccentric inspiration. The editing form features a random word generator to keep the creativity flowing.',
     image: '/haiku-for-you.png',
     github: 'https://github.com/cyrilmb/Haiku-For-You',
     link: 'coming soon',
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col md:flex-row md:space-x-12">
                   <div className="mt-8 md:w-1/2">
-                    <Link href={project.link} target="_blank">
+                    <Link href={project.github} target="_blank">
                       <Image
                         src={project.image}
                         alt={`Screenshot of the app ${project.name}`}
@@ -53,18 +53,21 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="mt-2 flex flex-row align-bottom space-x-4">
+                      <p className="text-xl leading-7 text-neutral-600 dark:text-neutral-400">
+                        Check out the project repo on Github:
+                      </p>
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
+                      {/* <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
