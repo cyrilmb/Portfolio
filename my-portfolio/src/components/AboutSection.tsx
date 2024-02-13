@@ -39,7 +39,7 @@ const AboutSection = () => {
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-x-10 md:space-y-0">
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
-              A little about me:
+              A brief into:
             </h1>
             <p>
               {' '}
@@ -50,11 +50,18 @@ const AboutSection = () => {
               software developer.
             </p>
             <br />
-            <p>With my backgrounds in healthcare and bartending</p>
+            <p>
+              I am currently learning animation using Canvas to build a mystery
+              platformer game and a helpful garden-design app.{' '}
+            </p>
             <br />
-            <p>Concern for service into tech curiosities</p>
+            <p>The potential power of tech, building community and service</p>
             <br />
-            <p>hobbies</p>
+            <p>
+              Generally fascinated by ephemeral processes, I love gardening in
+              the vegetable and prairie restoration patches. I love to cook and
+              ferment
+            </p>
             <div className="mt-2 flex flex-row align-bottom space-x-4">
               <p>Checkout my GitHub:</p>
               <Link href={'https://github.com/cyrilmb/'} target="_blank">
