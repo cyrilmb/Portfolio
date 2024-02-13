@@ -54,7 +54,7 @@ const ProjectsSection = () => {
                     </p>
                     <div className="mt-2 flex flex-row align-bottom space-x-4">
                       <p className="text-xl leading-7 text-neutral-600 dark:text-neutral-400">
-                        Check out the project repo on Github:
+                        Check out the repo on Github:
                       </p>
                       <Link href={project.github} target="_blank">
                         <BsGithub
