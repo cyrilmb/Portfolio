@@ -1,5 +1,7 @@
 import React from 'react';
 import SlideLeft from './SlideLeft';
+import Link from 'next/link';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const skills = [
   { skill: 'HTML5' },
@@ -53,8 +55,27 @@ const AboutSection = () => {
             <p>Concern for service into tech curiosities</p>
             <br />
             <p>hobbies</p>
-            <p>Checkout my GitHub:</p>
-            <p>Or I'd love to connect on LinkedIn:</p>
+            <div className="mt-2 flex flex-row align-bottom space-x-4">
+              <p>Checkout my GitHub:</p>
+              <Link href={'https://github.com/cyrilmb/'} target="_blank">
+                <BsGithub
+                  size={30}
+                  className="hover:-translate-y-1 transition-transform cursor-pointer"
+                />
+              </Link>
+            </div>
+            <div className="mt-2 flex flex-row align-bottom space-x-4">
+              <p>And connect with me on LinkedIn:</p>
+              <Link
+                href={'https://www.linkedin.com/in/cyril-malle-barlow/'}
+                target="_blank"
+              >
+                <BsLinkedin
+                  size={30}
+                  className="hover:-translate-y-1 transition-transform cursor-pointer"
+                />
+              </Link>
+            </div>
           </div>
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
