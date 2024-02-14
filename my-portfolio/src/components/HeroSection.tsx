@@ -8,9 +8,9 @@ const HeroSection = () => {
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center mt-10 mb-5 pt-16 pb-4 md:flex-row md:space-x-6 md:text-left md:pt-12 md:pb-20 md:mt-16">
-        <div className="md:w-1/2 md:-mr-0.5 md:mt-2">
+        <div className="md:w-1/2 md:-mr-0.5 md:mt-2 ">
           <Image
-            className="rounded-full shadow-2xl md:mx-3"
+            className="rounded-full shadow-2xl md:mx-3 transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]"
             src="/pink-door.jpeg"
             alt="Portrait of the developer looking happy because he is standing in front of a pink door"
             width={300}
@@ -41,8 +41,8 @@ const HeroSection = () => {
             living in beautiful Minneapolis, MN.
           </p>
           <p className="text-sm mt-4 mb-8 md:text-lg md:ml-6">
-            "He loves plants and spiders, stories and games, food and friends.
-            And his dogs, especially."
+            He loves plants and spiders, stories and games, food and friends.
+            And his dogs, especially.
           </p>
           <p className="text-lg mt-2 mb-6 md:text-2xl">
             Jump to see:

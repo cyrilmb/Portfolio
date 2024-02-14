@@ -62,6 +62,7 @@ const AboutSection = () => {
               the vegetable and prairie restoration patches. I love to cook and
               ferment
             </p>
+            <br />
             <div className="mt-2 flex flex-row align-bottom space-x-4">
               <p>Checkout my GitHub:</p>
               <Link href={'https://github.com/cyrilmb/'} target="_blank">
@@ -72,7 +73,7 @@ const AboutSection = () => {
               </Link>
             </div>
             <div className="mt-2 flex flex-row align-bottom space-x-4">
-              <p>And connect with me on LinkedIn:</p>
+              <p>Connect with me on LinkedIn:</p>
               <Link
                 href={'https://www.linkedin.com/in/cyril-malle-barlow/'}
                 target="_blank"
@@ -91,11 +92,8 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-start">
               {skills.map((item, i) => {
                 return (
-                  <SlideLeft>
-                    <p
-                      key={i}
-                      className="bg-blue-400 px-4 py-2 mr-2 mt-2 rounded text-grey-500 font-semibold"
-                    >
+                  <SlideLeft key={i}>
+                    <p className="bg-blue-400 px-4 py-2 mr-2 mt-2 rounded text-grey-500 font-semibold">
                       {item.skill}
                     </p>
                   </SlideLeft>
