@@ -6,18 +6,19 @@ import { HiArrowDown } from 'react-icons/hi2';
 
 const HeroSection = () => {
   const [picFlip, setPicFlip] = useState(false);
-  let flipScript = '';
+  let flipScript1 = '';
+  let flipScript2 = '';
 
   if (picFlip === true) {
-    flipScript =
+    flipScript1 =
       'transition-all duration-500 [transform-style:preserve-3d] [transform:rotateY(180deg)]';
-  } else flipScript = '';
+  } else flipScript1 = '';
 
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center mt-10 mb-5 pt-16 pb-4 md:flex-row md:space-x-6 md:text-left md:pt-12 md:pb-20 md:mt-16">
         <div className="md:w-1/2 md:-mr-0.5 md:mt-2 ">
-          <div className={`relative inline-block ${flipScript}`}>
+          <div className={`relative inline-block ${flipScript1}`}>
             <Image
               className="rounded-full shadow-2xl md:mx-3"
               src="/pink-door.jpeg"

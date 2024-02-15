@@ -39,7 +39,7 @@ const AboutSection = () => {
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-x-10 md:space-y-0">
           <div className="md:w-1/2">
             <h1 className="test-center text-2xl font-bold mb-6 md:text-left">
-              A brief into:
+              A brief intro:
             </h1>
             <p>
               {' '}
@@ -47,20 +47,26 @@ const AboutSection = () => {
               <span className="font-bold">{'persistently curious'}</span>,
               <span className="font-bold">{' creatively minded'}</span>, and
               <span className="font-bold">{' team-oriented'}</span> full stack
-              software developer.
+              software developer. With a background in hospital and restaurant
+              service, I am a reliable communicator and excited collaborator
+              with an eye always on accomodation.
             </p>
             <br />
             <p>
-              I am currently learning animation using Canvas to build a mystery
-              platformer game and a helpful garden-design app.{' '}
+              I'm currently learning how to animate using Canvas to build a
+              mystery platformer game, and to illustrate helpful garden planning
+              app. I'm also interested in learning more about backend management
+              and infrastucture as code.
             </p>
             <br />
-            <p>The potential power of tech, building community and service</p>
-            <br />
+            {/* <p>The potential power of tech, building community and service</p>
+            <br /> */}
             <p>
-              Generally fascinated by ephemeral processes, I love gardening in
-              the vegetable and prairie restoration patches. I love to cook and
-              ferment
+              Generally fascinated by ephemeral processes, I love to garden
+              (vegetables and prairies), to cook and ferment, tracking time at
+              rates of biological transformation. I love art and print-making,
+              in particular, to capture emotional impressions in stages of
+              immersion.
             </p>
             <br />
             <div className="mt-2 flex flex-row align-bottom space-x-4">
