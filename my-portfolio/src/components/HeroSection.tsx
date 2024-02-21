@@ -5,10 +5,10 @@ import { Link } from 'react-scroll/modules';
 import { HiArrowDown } from 'react-icons/hi2';
 
 const HeroSection = () => {
-  const [picFlip, setPicFlip] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleImageClick = () => {
-    setPicFlip(!picFlip);
+    setIsFlipped(!isFlipped);
   };
 
   return (
@@ -18,30 +18,27 @@ const HeroSection = () => {
           <div
             className="relative inline-block transition-transform duration-500 transform-style-preserve-3d backface-hidden"
             style={{
-              transform: picFlip ? 'rotateY(180deg)' : 'rotateY(0)',
-              transition: 'transform 0.5s',
+              transform: `rotateY(${isFlipped ? 180 : 0}deg)`,
             }}
             onClick={handleImageClick}
           >
-            {picFlip ? (
-              <Image
-                className="rounded-full shadow-2xl md:mx-3 cursor-pointer"
-                src="/profile-dogs.jpeg"
-                alt="Portrait of the developer looking happy because he is trying to take a selfie with his two dogs"
-                width={300}
-                height={300}
-                priority={true}
-              />
-            ) : (
-              <Image
-                className="rounded-full shadow-2xl md:mx-3 cursor-pointer"
-                src="/pink-door.jpeg"
-                alt="Portrait of the developer looking happy because he is standing in front of a pink door"
-                width={300}
-                height={300}
-                priority={true}
-              />
-            )}
+            <Image
+              className="rounded-full shadow-2xl md:mx-3 cursor-pointer"
+              // Dynamically choose image based on isFlipped
+              src={isFlipped ? '/profile-dogs.jpeg' : '/pink-door.jpeg'}
+              alt={
+                isFlipped
+                  ? 'Portrait of the developer looking happy because he is trying to take a selfie with his two dogs'
+                  : 'Portrait of the developer looking happy because he is standing in front of a pink door'
+              }
+              width={300}
+              height={300}
+              priority={true}
+              // Apply scaleX: -1 to flip the second image horizontally
+              // layout="fill"
+              // objectFit="cover"
+              style={{ transform: isFlipped ? 'scaleX(-1)' : 'scaleX(1)' }}
+            />
           </div>
         </div>
         <div className="md:mt-2 md:w-3/5">
