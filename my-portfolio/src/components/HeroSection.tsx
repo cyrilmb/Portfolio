@@ -16,29 +16,33 @@ const HeroSection = () => {
       <div className="flex flex-col text-center items-center justify-center mt-10 mb-5 pt-16 pb-4 md:flex-row md:space-x-6 md:text-left md:pt-12 md:pb-20 md:mt-16">
         <div className="md:w-1/2 md:-mr-0.5 md:mt-2 relative">
           <div
-            className="relative inline-block transition-transform duration-500 transform-style-preserve-3d backface-hidden"
+            className="relative inline-block transition-transform duration-1000 transform-style-preserve-3d backface-hidden"
             style={{
-              transform: `rotateY(${isFlipped ? 180 : 0}deg)`,
+              transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0)',
+              transition: 'transform 0.5s',
             }}
             onClick={handleImageClick}
           >
-            <Image
-              className="rounded-full shadow-2xl md:mx-3 cursor-pointer"
-              // Dynamically choose image based on isFlipped
-              src={isFlipped ? '/profile-dogs.jpeg' : '/pink-door.jpeg'}
-              alt={
-                isFlipped
-                  ? 'Portrait of the developer looking happy because he is trying to take a selfie with his two dogs'
-                  : 'Portrait of the developer looking happy because he is standing in front of a pink door'
-              }
-              width={300}
-              height={300}
-              priority={true}
-              // Apply scaleX: -1 to flip the second image horizontally
-              // layout="fill"
-              // objectFit="cover"
-              style={{ transform: isFlipped ? 'scaleX(-1)' : 'scaleX(1)' }}
-            />
+            {isFlipped ? (
+              <Image
+                className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
+                src="/profile-dogs.jpeg"
+                alt="Portrait of the developer looking happy because he is trying to take a selfie with his two dogs"
+                width={300}
+                height={300}
+                priority={true}
+                style={{ transform: 'scaleX(-1)' }} // Flip the second image
+              />
+            ) : (
+              <Image
+                className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
+                src="/pink-door.jpeg"
+                alt="Portrait of the developer looking happy because he is standing in front of a pink door"
+                width={300}
+                height={300}
+                priority={true}
+              />
+            )}
           </div>
         </div>
         <div className="md:mt-2 md:w-3/5">

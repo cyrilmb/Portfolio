@@ -64,9 +64,9 @@ const AboutSection = () => {
             <p>
               Generally fascinated by ephemeral processes, I love to garden
               (vegetables and prairies), to cook and ferment, tracking time at
-              rates of biological transformation. I love art and print-making,
-              in particular, to capture emotional impressions in stages of
-              immersion.
+              rates of biological transformation. I love art and print-making in
+              particular, the act of capturing emotional impressions in ritual
+              stages.
             </p>
             <br />
             <div className="mt-2 flex flex-row align-bottom space-x-4">
