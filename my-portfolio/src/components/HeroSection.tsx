@@ -7,8 +7,13 @@ import { HiArrowDown } from 'react-icons/hi2';
 const HeroSection = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const [pause, setPause] = useState(false);
+
   const handleImageClick = () => {
     setIsFlipped(!isFlipped);
+    setTimeout(() => {
+      setPause(!pause);
+    }, 100);
   };
 
   return (
@@ -23,7 +28,7 @@ const HeroSection = () => {
             }}
             onClick={handleImageClick}
           >
-            {isFlipped ? (
+            {pause ? (
               <Image
                 className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
                 src="/profile-dogs.jpeg"
