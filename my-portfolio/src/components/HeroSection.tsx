@@ -74,7 +74,14 @@ const HeroSection = () => {
           </p>
           <p className="text-sm mt-4 mb-8 md:text-lg md:ml-6">
             He loves plants and spiders, stories and games, food and friends.
-            And his dogs, especially.
+            And his{' '}
+            <span
+              className="cursor-pointer underline text-blue-700 hover:text-xl"
+              onClick={handleImageClick}
+            >
+              dogs
+            </span>
+            , especially.
           </p>
           <p className="text-lg mt-2 mb-6 md:text-2xl">
             Jump to see:
