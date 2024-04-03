@@ -5,7 +5,7 @@ import Projects from '@/components/ProjectsSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cyril Malle-Barlow',
+  title: 'Cyril River Louie Malle-Barlow',
   description: 'Portfolio for Cyril Malle-Barlow',
 };
 
