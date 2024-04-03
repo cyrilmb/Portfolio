@@ -30,13 +30,13 @@ const HeroSection = () => {
           >
             {pause ? (
               <Image
-                className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
+                className="rounded-full shadow-2xl md:mx-3 cursor-pointer top-0 left-0 rotate-90 scaleX(-1)"
                 src="/profile-dogs.jpeg"
                 alt="Portrait of the developer looking happy because he is trying to take a selfie with his two dogs"
                 width={300}
                 height={300}
                 priority={true}
-                // style={{ transform: 'scaleX(-1)' }} // Flip the second image
+                // style={{ transform: 'scaleX(-1)' }} // Flip the second image bc it is pre-flipped
               />
             ) : (
               <Image
