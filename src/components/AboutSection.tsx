@@ -43,7 +43,7 @@ const AboutSection = () => {
             </h1>
             <p>
               {' '}
-              My name is Cyril Malle-Barlow, I'm a{' '}
+              My name is Cyril Malle-Barlow, I&apos;m a{' '}
               <span className="font-bold">{'persistently curious'}</span>,
               <span className="font-bold">{' creatively minded'}</span>, and
               <span className="font-bold">{' team-oriented'}</span> full stack
@@ -53,10 +53,10 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I'm currently learning how to animate using Canvas to build a
+              I&apos;m currently learning how to animate using Canvas to build a
               mystery platformer game, and to illustrate helpful garden planning
-              app. I'm also interested in learning more about backend management
-              and infrastucture as code.
+              app. I&apos;m also interested in learning more about backend
+              management and infrastucture as code.
             </p>
             <br />
             {/* <p>The potential power of tech, building community and service</p>

@@ -19,8 +19,8 @@ export default function SlideUp({ children, offset = '0px' }: Props) {
             entry.target.classList.add('animate-slideUpCubicBezier');
           }
         });
-      },
-      { rootMargin: offset }
+      }
+      // { rootMargin: offset }
     );
 
     if (ref.current) {
