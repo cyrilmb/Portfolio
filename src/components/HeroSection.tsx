@@ -30,7 +30,7 @@ const HeroSection = () => {
           >
             {pause ? (
               <Image
-                className="rounded-3xl shadow-2xl md:mx-3 cursor-pointer top-0 left-0 rotate-90"
+                className="rounded-3xl shadow-2xl md:mx-3 cursor-pointer top-0 left-0 rotate-90 -scale-x-0"
                 src="/profile-dogs.jpeg"
                 alt="Portrait of the developer looking happy because he is trying to take a selfie with his two dogs"
                 width={300}
