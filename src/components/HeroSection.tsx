@@ -36,7 +36,7 @@ const HeroSection = () => {
                 width={300}
                 height={300}
                 priority={true}
-                style={{ transform: 'scaleX(-1)' }} // Flip the second image
+                // style={{ transform: 'scaleX(-1)' }} // Flip the second image
               />
             ) : (
               <Image
