@@ -54,9 +54,9 @@ const AboutSection = () => {
             <br />
             <p>
               I&apos;m currently learning how to animate using Canvas to build a
-              mystery platformer game, and to illustrate helpful garden planning
-              app. I&apos;m also interested in learning more about backend
-              management and infrastucture as code.
+              mystery platformer game, and to illustrate a helpful garden
+              planning app. I&apos;m also interested in learning more about
+              backend management and building infrastucture as code.
             </p>
             <br />
             {/* <p>The potential power of tech, building community and service</p>
