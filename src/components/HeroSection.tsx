@@ -30,7 +30,7 @@ const HeroSection = () => {
           >
             {pause ? (
               <Image
-                className="rounded-3xl shadow-2xl md:mx-3 cursor-pointer top-0 left-0 rotate-90 "
+                className="rounded-3xl shadow-2xl md:mx-3 cursor-pointer top-0 left-0 rotate-90"
                 src="/profile-dogs.jpeg"
                 alt="Portrait of the developer looking happy because he is trying to take a selfie with his two dogs"
                 width={300}
@@ -43,8 +43,8 @@ const HeroSection = () => {
                 className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
                 src="/pink-door.jpeg"
                 alt="Portrait of the developer looking happy because he is standing in front of a pink door"
-                width={300}
                 height={300}
+                width={300}
                 priority={true}
               />
             )}
@@ -86,6 +86,7 @@ const HeroSection = () => {
             to="projects"
             className="text-neutral-100 font-semibold px-6 py-3 bg-blue-700 rounded shadow cursor-pointer hover:bg-blue-800"
             activeClass="active"
+            aria-label="Jump to projects section"
             spy={true}
             smooth={true}
             offset={-100}
