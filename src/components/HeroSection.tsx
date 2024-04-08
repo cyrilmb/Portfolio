@@ -58,10 +58,10 @@ const HeroSection = () => {
             <p className="font-bold text-2xl py-2 mr-2 md:py-6 md:text-5xl">
               This is
             </p>
-            <p className="font-bold text-2xl py-2 mr-2 md:py-6 md:text-5xl text-blue-700">
+            <p className="font-bold text-2xl py-2 mr-1 md:py-6 md:text-5xl text-blue-700">
               Cyril
             </p>
-            {/* <p className="font-bold text-2xl py-2 md:py-6 md:text-5xl">,</p> */}
+            <p className="font-bold text-2xl py-2 md:py-6 md:text-5xl">,</p>
           </span>
           <p className="text-lg mt-4 md:text-2xl">
             a{' '}
@@ -70,7 +70,7 @@ const HeroSection = () => {
             </span>
             living in beautiful Minneapolis, MN.
           </p>
-          <p className="text-sm mt-4 mb-8 md:text-lg md:ml-6">
+          <p className="text-sm mt-4 mb-8 md:text-lg">
             He loves plants and spiders, stories and games, food and friends.
             And his{' '}
             <span
@@ -81,20 +81,19 @@ const HeroSection = () => {
             </span>
             , especially.
           </p>
-          <p className="text-lg mt-2 mb-6 md:text-2xl">
-            {/* Jump to see: */}
-            <Link
-              to="projects"
-              className="text-neutral-100 font-semibold px-6 py-3 bg-blue-700 rounded shadow cursor-pointer ml-2 hover:bg-blue-800"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              See Projects
-            </Link>
-          </p>
+          {/* <p className="text-lg mt-2 mb-6 md:text-2xl"> */}
+          <Link
+            to="projects"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-blue-700 rounded shadow cursor-pointer hover:bg-blue-800"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            See Projects
+          </Link>
+          {/* </p> */}
         </div>
       </div>
       <div className="flex flex-row justify-center text-lg pb-10">
