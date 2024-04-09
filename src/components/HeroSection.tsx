@@ -1,20 +1,20 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { Link } from 'react-scroll/modules';
-import { HiArrowDown } from 'react-icons/hi2';
+'use client'
+import React, { useState } from 'react'
+import Image from 'next/image'
+import { Link } from 'react-scroll/modules'
+import { HiArrowDown } from 'react-icons/hi2'
 
 const HeroSection = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false)
 
-  const [pause, setPause] = useState(false);
+  const [pause, setPause] = useState(false)
 
   const handleImageClick = () => {
-    setIsFlipped(!isFlipped);
+    setIsFlipped(!isFlipped)
     setTimeout(() => {
-      setPause(!pause);
-    }, 100);
-  };
+      setPause(!pause)
+    }, 100)
+  }
 
   return (
     <section id="home">
@@ -43,8 +43,8 @@ const HeroSection = () => {
                 className="rounded-full shadow-2xl md:mx-3 cursor-pointer  top-0 left-0 z-10"
                 src="/pink-door.jpeg"
                 alt="Portrait of the developer looking happy because he is standing in front of a pink door"
-                height={300}
-                width={300}
+                height={400}
+                width={400}
                 priority={true}
               />
             )}
@@ -113,7 +113,7 @@ const HeroSection = () => {
         </Link>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection
